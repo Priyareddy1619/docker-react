@@ -5,4 +5,4 @@ services:
 before_install:
   -docker build -f priya/docker-react Dockerfile.dev .
 script:
-  -docker run priya/docker-react npm run test -- --coverage
+  -docker run priya/docker-react npm run test -- --coverage .
